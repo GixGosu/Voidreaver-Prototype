@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Voidreaver prototype</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #07080c; }
+    canvas { display: block; position: fixed; left: 0; top: 0; cursor: crosshair; }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <!-- Classic scripts (ES modules fail from file://). Order: config, core, data, game, scenes, debug, boot. -->
+  <script src="src/config.js"></script>
+
+  <script src="src/core/iso.js"></script>
+  <script src="src/core/entity.js"></script>
+  <script src="src/core/input.js"></script>
+  <script src="src/core/loop.js"></script>
+  <script src="src/core/camera.js"></script>
+  <script src="src/core/audio.js"></script>
+  <script src="src/core/world.js"></script>
+  <script src="src/core/renderer.js"></script>
+  <script src="src/core/hud.js"></script>
+
+  <script src="src/data/rooms.js"></script>
+  <script src="src/data/enemies.js"></script>
+  <script src="src/data/upgrades.js"></script>
+
+  <script src="src/game/player.js"></script>
+  <script src="src/game/combo.js"></script>
+  <script src="src/game/fx.js"></script>
+  <script src="src/game/cover.js"></script>
+  <script src="src/game/breach.js"></script>
+  <script src="src/game/weapons.js"></script>
+  <script src="src/game/enemies.js"></script>
+  <script src="src/game/room-state.js"></script>
+  <script src="src/game/doors.js"></script>
+  <script src="src/game/upgrades.js"></script>
+  <script src="src/game/flight-course.js"></script>
+  <script src="src/game/flight-sim.js"></script>
+  <script src="src/game/flight-draw.js"></script>
+
+  <script src="src/scenes/scene-manager.js"></script>
+  <script src="src/scenes/boarding.js"></script>
+  <script src="src/scenes/flight.js"></script>
+
+  <script src="src/debug/clipboard.js"></script>
+  <script src="src/debug/overlay.js"></script>
+  <script src="src/debug/telemetry.js"></script>
+  <script src="src/debug/tuning.js"></script>
+
+  <script src="src/core/boot.js"></script>
+</body>
+</html>
